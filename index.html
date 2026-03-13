@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wendy Bezerra | Marketing Strategist & AI Developer</title>
+<meta name="description" content="Portfolio of Wendy Bezerra — Marketing strategist, AI builder, and full‑stack developer creating meaningful digital products." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--bg:#1b1412;
+--bg-soft:#231a18;
+--card:#2b1f1b;
+--accent:#ff7a59;
+--accent-soft:#ffb38a;
+--text:#f7f5f4;
+--muted:#c7bdb8;
+--radius:18px;
+--max:1100px;
+}
+
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:Inter,system-ui;
+background:linear-gradient(180deg,#1b1412,#241b19);
+color:var(--text);
+}
+
+.container{
+width:min(calc(100% - 40px),var(--max));
+margin:auto;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+nav a{
+color:var(--muted);
+text-decoration:none;
+margin-left:20px;
+font-size:.95rem;
+}
+
+nav a:hover{color:white}
+
+.hero{
+display:grid;
+grid-template-columns:1.1fr .9fr;
+align-items:center;
+gap:40px;
+padding:80px 0;
+}
+
+.hero h1{
+font-size:3rem;
+margin:0 0 20px;
+}
+
+.hero p{
+color:var(--muted);
+line-height:1.7;
+}
+
+.btn{
+margin-top:25px;
+display:inline-block;
+padding:14px 22px;
+background:var(--accent);
+border-radius:12px;
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+.hero img{
+width:100%;
+border-radius:20px;
+}
+
+section{
+padding:60px 0;
+}
+
+.section-title{
+font-size:2rem;
+margin-bottom:30px;
+}
+
+.grid{
+display:grid;
+gap:25px;
+}
+
+.projects{
+grid-template-columns:repeat(2,1fr);
+}
+
+.card{
+background:var(--card);
+padding:24px;
+border-radius:var(--radius);
+}
+
+.card h3{
+margin-top:0;
+}
+
+.tags span{
+font-size:.8rem;
+background:#3a2b26;
+padding:6px 10px;
+border-radius:999px;
+margin-right:8px;
+}
+
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+footer{
+text-align:center;
+padding:40px 0;
+color:var(--muted);
+}
+
+.language{
+cursor:pointer;
+font-size:.85rem;
+}
+
+@media(max-width:900px){
+.hero{grid-template-columns:1fr}
+.projects{grid-template-columns:1fr}
+.contact{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+<strong>Wendy Bezerra</strong>
+<div>
+<a href="#projects" data-i18n="projects">Projects</a>
+<a href="#about" data-i18n="about">About</a>
+<a href="#contact" data-i18n="contact">Contact</a>
+<span class="language" onclick="setLang('en')">EN</span> |
+<span class="language" onclick="setLang('pt')">PT</span>
+</div>
+</nav>
+
+<section class="hero">
+
+<div>
+<h1 data-i18n="hero_title">Marketing strategist building AI‑powered products.</h1>
+<p data-i18n="hero_desc">
+I combine marketing strategy, technology and artificial intelligence to design meaningful digital experiences and scalable products.
+</p>
+
+<a class="btn" href="#projects" data-i18n="view_projects">View Projects</a>
+</div>
+
+<img src="wendy.jpg" alt="Wendy Bezerra">
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title" data-i18n="projects">Projects</h2>
+
+<div class="grid projects">
+
+<div class="card">
+<h3>Routine Care</h3>
+<p data-i18n="p1">
+AI powered health routine builder focused on habit design and personalized wellness flows.
+</p>
+<div class="tags">
+<span>AI</span>
+<span>UX</span>
+<span>Product</span>
+</div>
+
+<a class="btn" href="https://github.com/wendybezerra">GitHub</a>
+</div>
+
+<div class="card">
+<h3>Use Flô</h3>
+<p data-i18n="p2">
+Brand strategy and digital storytelling project combining design, marketing and product thinking.
+</p>
+<div class="tags">
+<span>Brand</span>
+<span>Marketing</span>
+</div>
+
+<a class="btn" href="https://github.com/wendybezerra">Case Study</a>
+</div>
+
+<div class="card">
+<h3>Marketing Analytics AI</h3>
+<p data-i18n="p3">
+Experimental project exploring AI driven marketing insights and performance analysis.
+</p>
+<div class="tags">
+<span>AI</span>
+<span>Data</span>
+</div>
+
+<a class="btn" href="https://github.com/wendybezerra">GitHub</a>
+</div>
+
+<div class="card">
+<h3>Landing Pages</h3>
+<p data-i18n="p4">
+Collection of responsive landing pages and digital brand experiences designed for conversion.
+</p>
+
+<div class="tags">
+<span>Web</span>
+<span>UX</span>
+</div>
+
+<a class="btn" href="https://github.com/wendybezerra">Portfolio</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title" data-i18n="about">About</h2>
+
+<p data-i18n="about_desc">
+My work sits at the intersection of marketing strategy, product thinking and software development. I enjoy building things that connect creativity with measurable impact.
+</p>
+
+</section>
+
+<section id="contact" class="contact">
+
+<div>
+<h2 class="section-title" data-i18n="contact">Contact</h2>
+<p data-i18n="contact_desc">If you're building something interesting I'd love to connect.</p>
+
+<p>
+GitHub: <a href="https://github.com/wendybezerra">github.com/wendybezerra</a>
+</p>
+
+<p>
+LinkedIn: <a href="https://www.linkedin.com/in/wendymbezerra/">wendymbezerra</a>
+</p>
+
+</div>
+
+<div>
+<form>
+<input placeholder="Name" style="width:100%;padding:12px;margin-bottom:10px;border-radius:8px;border:none">
+<input placeholder="Email" style="width:100%;padding:12px;margin-bottom:10px;border-radius:8px;border:none">
+<textarea placeholder="Message" style="width:100%;padding:12px;border-radius:8px;border:none"></textarea>
+<button class="btn" style="margin-top:10px">Send</button>
+</form>
+</div>
+
+</section>
+
+<footer>
+© Wendy Bezerra
+</footer>
+
+</div>
+
+<script>
+
+const translations={
+
+pt:{
+hero_title:"Estrategista de marketing criando produtos com IA",
+hero_desc:"Combino estratégia de marketing, tecnologia e inteligência artificial para desenvolver experiências digitais e produtos escaláveis.",
+view_projects:"Ver projetos",
+projects:"Projetos",
+about:"Sobre",
+contact:"Contato",
+p1:"Aplicação de IA focada em rotinas de saúde personalizadas.",
+p2:"Projeto de branding e storytelling digital.",
+p3:"Exploração de insights de marketing com IA.",
+p4:"Coleção de landing pages responsivas.",
+about_desc:"Meu trabalho fica na interseção entre estratégia de marketing, produto e desenvolvimento.",
+contact_desc:"Se você estiver criando algo interessante adoraria conversar."
+}
+
+}
+
+function setLang(lang){
+
+if(!translations[lang])return
+
+Object.keys(translations[lang]).forEach(key=>{
+
+document.querySelectorAll(`[data-i18n="${key}"]`).forEach(el=>{
+
+el.innerText=translations[lang][key]
+
+})
+
+})
+
+}
+
+</script>
+
+</body>
+</html>
