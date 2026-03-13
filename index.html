@@ -4,11 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wendy Bezerra | Full-Stack & AI Developer</title>
-  <meta name="description" content="Wendy Bezerra is a Full-Stack & AI Developer building polished digital products, AI experiences, and modern web interfaces with a background in marketing and finance." />
+  <meta
+    name="description"
+    content="Wendy Bezerra is a Full-Stack & AI Developer building polished digital products, AI experiences, and modern web interfaces with a background in marketing and finance."
+  />
   <meta name="theme-color" content="#120f0e" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
   <style>
     :root {
       --bg: #120f0e;
@@ -265,7 +272,7 @@
       line-height: 0.96;
       letter-spacing: -0.06em;
       margin: 0 0 18px;
-      max-width: 11ch;
+      max-width: 12ch;
     }
 
     .hero h1 .gradient {
@@ -601,47 +608,6 @@
       opacity: 1;
     }
 
-    .stats-grid {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
-    .stat-card {
-      padding: 18px;
-      border-radius: 22px;
-      min-height: 132px;
-    }
-
-    .stat-card small {
-      display: block;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-size: 0.72rem;
-      color: var(--accent-2);
-      font-weight: 800;
-      margin-bottom: 14px;
-    }
-
-    .stat-card strong {
-      display: block;
-      font-size: 2rem;
-      letter-spacing: -0.05em;
-      margin-bottom: 6px;
-    }
-
-    .stat-card span {
-      color: var(--muted);
-      line-height: 1.5;
-      font-size: 0.9rem;
-    }
-
-    .auto-projects-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 16px;
-    }
-
     .repo-grid {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
@@ -778,8 +744,7 @@
       .featured-grid,
       .repo-grid,
       .timeline-grid,
-      .stack-grid,
-      .stats-grid {
+      .stack-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
@@ -787,10 +752,6 @@
       .contact-grid,
       .hero {
         grid-template-columns: 1fr;
-      }
-
-      h1 {
-        max-width: 12ch;
       }
     }
 
@@ -826,8 +787,7 @@
       .featured-grid,
       .repo-grid,
       .timeline-grid,
-      .stack-grid,
-      .stats-grid {
+      .stack-grid {
         grid-template-columns: 1fr;
       }
 
@@ -846,9 +806,15 @@
       .portrait-wrap {
         min-height: auto;
       }
+
+      .contact-link {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
@@ -891,10 +857,10 @@
           </div>
 
           <h1>
-            <span data-i18n="heroLine1">Building </span>
+            <span data-i18n="heroLine1">Building</span>
             <span class="gradient" data-i18n="heroLine2">thoughtful products where</span>
-            <span data-i18n="heroLine3">Technology, AI, and human experience meet.</span>
-          </h1>  
+            <span data-i18n="heroLine3">technology, AI, and human experience meet.</span>
+          </h1>
 
           <p data-i18n="heroDescription">
             I’m a Full-Stack & AI Developer with a background in marketing and finance. I enjoy building thoughtful digital products — combining clean interfaces, scalable systems, and AI-powered solutions. I care about how products work, how they feel for users, and how technology can create real value when engineering, design, and strategy come together.
@@ -939,6 +905,7 @@
             <h2 data-i18n="aboutTitle">Tech first. Product driven. Design aware.</h2>
           </div>
           <p data-i18n="aboutText">
+            My main focus is software development. I build full-stack and AI-powered solutions, design user-centered interfaces and think carefully about how a product should function, feel, and scale. My background in marketing and finance helps me connect engineering decisions to business context and user value.
           </p>
         </div>
 
@@ -969,7 +936,7 @@
             <h2 data-i18n="stackTitle">Core technologies and complementary strengths</h2>
           </div>
           <p data-i18n="stackText">
-            
+            A concise view of the technologies I work with and the strengths that shape how I build products.
           </p>
         </div>
 
@@ -1024,10 +991,10 @@
         <div class="section-header reveal">
           <div>
             <span class="section-label" data-i18n="featuredLabel">Featured work</span>
-            <h2 data-i18n="featuredTitle">Projects </h2>
+            <h2 data-i18n="featuredTitle">Projects</h2>
           </div>
           <p data-i18n="featuredText">
-           
+            A curated selection of work that reflects my strongest mix of full-stack thinking, interface design, and product execution.
           </p>
         </div>
 
@@ -1042,7 +1009,7 @@
               <span class="chip">UX</span>
             </div>
             <h3>Routine Care</h3>
-            <p data-i18n="featuredDesc1">An AI-driven product concept built to help users create personalized routines. Great for showcasing product thinking, user flow design and practical AI integration.</p>
+            <p data-i18n="featuredDesc1">An AI-driven product concept built to help users create personalized routines. Great for showcasing product thinking, user flow design, and practical AI integration.</p>
             <div class="project-links">
               <a class="text-link" href="https://github.com/wendybezerra" target="_blank" rel="noreferrer" data-i18n="projectGithub">GitHub ↗</a>
             </div>
@@ -1050,7 +1017,7 @@
 
           <article class="project-card glass reveal">
             <div class="project-visual">
-              <span data-i18n="featuredVisual2">A portfolio of web experiences where development, conversion and visual polish work together.</span>
+              <span data-i18n="featuredVisual2">A portfolio of web experiences where development, conversion, and visual polish work together.</span>
             </div>
             <div class="chips">
               <span class="chip">Front-End</span>
@@ -1074,17 +1041,13 @@
               <span class="chip">Product</span>
             </div>
             <h3>Marketing Analytics AI</h3>
-            <p data-i18n="featuredDesc3">A concept focused on transforming performance data into clearer strategic decisions. Strong for presenting problem-solving ability across AI, product and analysis.</p>
+            <p data-i18n="featuredDesc3">A concept focused on transforming performance data into clearer strategic decisions. Strong for presenting problem-solving ability across AI, product, and analysis.</p>
             <div class="project-links">
               <a class="text-link" href="https://github.com/wendybezerra" target="_blank" rel="noreferrer" data-i18n="projectGithub">GitHub ↗</a>
             </div>
           </article>
         </div>
       </section>
-
-     
-
-        
 
       <section id="projects">
         <div class="section-header reveal">
@@ -1093,7 +1056,7 @@
             <h2 data-i18n="projectsTitle">GitHub Projects</h2>
           </div>
           <p data-i18n="projectsText">
-            
+            A live feed of public repositories pulled directly from GitHub to keep this portfolio current as my work evolves.
           </p>
         </div>
 
@@ -1103,7 +1066,13 @@
             <span class="chip" data-i18n="projectsHint2">Auto-updating</span>
             <span class="chip" data-i18n="projectsHint3">Developer-first showcase</span>
           </div>
-          <a class="text-link" href="https://github.com/wendybezerra?tab=repositories" target="_blank" rel="noreferrer" data-i18n="seeAllRepos">See all repositories ↗</a>
+          <a
+            class="text-link"
+            href="https://github.com/wendybezerra?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
+            data-i18n="seeAllRepos"
+          >See all repositories ↗</a>
         </div>
 
         <div class="grid repo-grid" id="repoGrid">
@@ -1118,7 +1087,7 @@
             <h2 data-i18n="journeyTitle">How my profile is evolving</h2>
           </div>
           <p data-i18n="journeyText">
-            
+            A clearer story of how my background evolved into a more technical, product-focused path in software development.
           </p>
         </div>
 
@@ -1126,19 +1095,19 @@
           <article class="timeline-card glass reveal">
             <small data-i18n="journeyStage1Label">Foundation</small>
             <h3 data-i18n="journeyStage1Title">Marketing and business understanding</h3>
-            <p data-i18n="journeyStage1Text">Built strong communication, brand, performance and business awareness that now informs how I think about products and users.</p>
+            <p data-i18n="journeyStage1Text">Built strong communication, brand, performance, and business awareness that now informs how I think about products and users.</p>
           </article>
 
           <article class="timeline-card glass reveal">
             <small data-i18n="journeyStage2Label">Transition</small>
             <h3 data-i18n="journeyStage2Title">Hands-on digital execution</h3>
-            <p data-i18n="journeyStage2Text">Moved from strategy into making, shipping and refining digital experiences directly through code and product work.</p>
+            <p data-i18n="journeyStage2Text">Moved from strategy into making, shipping, and refining digital experiences directly through code and product work.</p>
           </article>
 
           <article class="timeline-card glass reveal">
             <small data-i18n="journeyStage3Label">Expansion</small>
             <h3 data-i18n="journeyStage3Title">Full-stack and AI capability</h3>
-            <p data-i18n="journeyStage3Text">Built technical range across interfaces, AI-enhanced experiences and developer workflows with a portfolio-driven mindset.</p>
+            <p data-i18n="journeyStage3Text">Built technical range across interfaces, AI-enhanced experiences, and developer workflows with a portfolio-driven mindset.</p>
           </article>
 
           <article class="timeline-card glass reveal">
@@ -1156,30 +1125,50 @@
             <h2 data-i18n="contactTitle">Let’s build something strong</h2>
           </div>
           <p data-i18n="contactText">
+            I am especially interested in opportunities where product, engineering, and thoughtful user experience come together.
           </p>
         </div>
 
         <div class="grid contact-grid">
           <article class="panel glass reveal">
             <h3 data-i18n="contactLeftTitle">Find me online</h3>
-            <p data-i18n="contactLeftText"></p>
+            <p data-i18n="contactLeftText">Use these links for applications, networking, and recruiter conversations.</p>
+
             <div class="contact-links">
               <a class="contact-link" href="https://github.com/wendybezerra" target="_blank" rel="noreferrer">
                 <span>GitHub</span>
                 <strong>github.com/wendybezerra ↗</strong>
               </a>
+
               <a class="contact-link" href="https://www.linkedin.com/in/wendymbezerra/" target="_blank" rel="noreferrer">
                 <span>LinkedIn</span>
                 <strong>linkedin.com/in/wendymbezerra ↗</strong>
               </a>
-              <a class="contact-link" href="mailto:your@email.com">
+
+              <a class="contact-link" href="mailto:wendybezerra.dev@gmail.com">
                 <span>Email</span>
                 <strong data-i18n="contactEmailPlaceholder">wendybezerra.dev@gmail.com ↗</strong>
               </a>
             </div>
           </article>
 
-          
+          <article class="cta-box glass reveal">
+            <h3 data-i18n="ctaTitle">Open to thoughtful product and engineering work</h3>
+            <p data-i18n="ctaText">
+              I’m focused on building stronger developer projects, refined user experiences, and modern full-stack work that feels both polished and useful.
+            </p>
+            <a
+              class="button button-primary"
+              href="https://github.com/wendybezerra"
+              target="_blank"
+              rel="noreferrer"
+              data-i18n="ctaButton"
+            >Open GitHub profile</a>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
 
   <footer>
     <div class="container">
@@ -1190,11 +1179,7 @@
   <script>
     const githubUsername = 'wendybezerra';
     const repoGrid = document.getElementById('repoGrid');
-    const repoCountElement = document.getElementById('repoCount');
     const heroRepoCountElement = document.getElementById('heroRepoCount');
-    const starCountElement = document.getElementById('starCount');
-    const latestUpdateElement = document.getElementById('latestUpdate');
-    const topLanguageElement = document.getElementById('topLanguage');
     const navLinks = document.getElementById('navLinks');
     const menuButton = document.getElementById('menuButton');
     const langButtons = document.querySelectorAll('[data-lang]');
@@ -1209,86 +1194,75 @@
         navProjects: 'Projects',
         navContact: 'Contact',
         eyebrow: 'Open to building modern products with AI, full-stack engineering and product thinking',
-        heroLine1: 'I build',
-        heroLine2: 'polished digital products',
-        heroLine3: 'with code, AI and strategy.',
-        heroDescription: 'Full-Stack & AI Developer with a background in marketing and finance, focused on building clean interfaces, useful products and scalable user experiences. I care about thoughtful systems, strong execution and work that feels both elegant and effective.',
+        heroLine1: 'Building',
+        heroLine2: 'thoughtful products where',
+        heroLine3: 'technology, AI, and human experience meet.',
+        heroDescription: 'I’m a Full-Stack & AI Developer with a background in marketing and finance. I enjoy building thoughtful digital products — combining clean interfaces, scalable systems, and AI-powered solutions. I care about how products work, how they feel for users, and how technology can create real value when engineering, design, and strategy come together.',
         heroPrimary: 'Explore projects',
         heroSecondary: 'View GitHub',
         metricRepos: 'public repositories showcased through GitHub API',
         metricFullstack: 'front-end polish with product-minded development',
         metricAi: 'focused on useful experiences, not just experiments',
         heroCardLabel: 'Current focus',
-        heroCardText: 'Building modern web experiences, AI-powered tools and developer-ready interfaces with a strong product and brand perspective.',
+        heroCardText: 'Building modern web experiences, AI-powered tools, and developer-ready interfaces with a strong product and brand perspective.',
         aboutLabel: 'Positioning',
         aboutTitle: 'Tech first. Product driven. Design aware.',
-        aboutText: 'My main focus is software development. I build full-stack and AI-powered solutions, design user-centered interfaces and think carefully about how a product should function, feel and scale. My background in marketing and finance helps me connect engineering decisions to business context and user value.',
+        aboutText: 'My main focus is software development. I build full-stack and AI-powered solutions, design user-centered interfaces and think carefully about how a product should function, feel, and scale. My background in marketing and finance helps me connect engineering decisions to business context and user value.',
         aboutLeftTitle: 'What I bring to development teams',
         aboutLeft1: 'Full-stack execution with a strong front-end eye and clean, maintainable structure',
         aboutLeft2: 'AI product thinking focused on real workflows, usability and value',
         aboutLeft3: 'Cross-functional communication shaped by marketing, strategy and business awareness',
         aboutLeft4: 'A polished portfolio mindset: build it well, present it well, ship with intention',
         aboutRightTitle: 'What I am building more of',
-        aboutRightText: 'Projects in full-stack development, AI-enhanced interfaces, thoughtful front-end systems, interactive product experiences and end-to-end digital builds that show both technical range and execution quality.',
+        aboutRightText: 'Projects in full-stack development, AI-enhanced interfaces, thoughtful front-end systems, interactive product experiences, and end-to-end digital builds that show both technical range and execution quality.',
         stackLabel: 'Capabilities',
-        stackTitle: 'Technical stack and adjacent strengths',
-        stackText: 'This section helps recruiters and hiring managers understand your technical range fast, while still showing the strategic perspective that makes your profile distinctive.',
+        stackTitle: 'Core technologies and complementary strengths',
+        stackText: 'A concise view of the technologies I work with and the strengths that shape how I build products.',
         stackFrontend: 'Front-end',
         stackFullstack: 'Full-stack',
         stackAi: 'AI & product',
         stackBusiness: 'Business context',
         featuredLabel: 'Featured work',
-        featuredTitle: 'Projects I want recruiters to notice first',
-        featuredText: 'Keep this area curated. These cards should be your strongest portfolio pieces and can link to live demos, case studies or specific GitHub repositories.',
+        featuredTitle: 'Projects',
+        featuredText: 'A curated selection of work that reflects my strongest mix of full-stack thinking, interface design, and product execution.',
         featuredVisual1: 'AI-powered health and habit product experience centered on personalization and thoughtful UX.',
-        featuredVisual2: 'A portfolio of web experiences where development, conversion and visual polish work together.',
+        featuredVisual2: 'A portfolio of web experiences where development, conversion, and visual polish work together.',
         featuredVisual3: 'Technical and analytical thinking applied to smarter decision-making systems and product opportunities.',
-        featuredDesc1: 'An AI-driven product concept built to help users create personalized routines. Great for showcasing product thinking, user flow design and practical AI integration.',
+        featuredDesc1: 'An AI-driven product concept built to help users create personalized routines. Great for showcasing product thinking, user flow design, and practical AI integration.',
         featuredTitle2: 'Landing Pages & Client Builds',
         featuredDesc2: 'Responsive interfaces and digital builds designed with both user experience and business goals in mind. Useful for showing execution quality and front-end taste.',
-        featuredDesc3: 'A concept focused on transforming performance data into clearer strategic decisions. Strong for presenting problem-solving ability across AI, product and analysis.',
+        featuredDesc3: 'A concept focused on transforming performance data into clearer strategic decisions. Strong for presenting problem-solving ability across AI, product, and analysis.',
         projectGithub: 'GitHub ↗',
-        statsLabel: 'GitHub pulse',
-        statsTitle: 'Live GitHub stats on the page',
-        statsText: 'These cards update automatically from your public GitHub profile. This is one of the easiest ways to show your development activity without manually editing the site every time.',
-        statReposLabel: 'Repositories',
-        statReposText: 'public repositories available on your GitHub profile',
-        statStarsLabel: 'Stars',
-        statStarsText: 'total stars across selected public repositories',
-        statUpdatedLabel: 'Latest update',
-        statUpdatedText: 'most recent repository activity shown from GitHub',
-        statLanguagesLabel: 'Top stack',
-        statLanguagesText: 'most common primary language in the repositories displayed',
         projectsLabel: 'Automatic project feed',
-        projectsTitle: 'GitHub projects loaded automatically',
-        projectsText: 'This section fetches repositories directly from GitHub with JavaScript, so your portfolio can stay current as you add more developer work. It prioritizes your technical projects and keeps the page alive.',
+        projectsTitle: 'GitHub Projects',
+        projectsText: 'A live feed of public repositories pulled directly from GitHub to keep this portfolio current as my work evolves.',
         projectsHint1: 'Live from GitHub API',
         projectsHint2: 'Auto-updating',
         projectsHint3: 'Developer-first showcase',
         seeAllRepos: 'See all repositories ↗',
         journeyLabel: 'Trajectory',
         journeyTitle: 'How my profile is evolving',
-        journeyText: 'This part helps frame your story for recruiters: not as a random mix of interests, but as a clear evolution toward product-building and modern development work.',
+        journeyText: 'A clearer story of how my background evolved into a more technical, product-focused path in software development.',
         journeyStage1Label: 'Foundation',
         journeyStage1Title: 'Marketing and business understanding',
-        journeyStage1Text: 'Built strong communication, brand, performance and business awareness that now informs how I think about products and users.',
+        journeyStage1Text: 'Built strong communication, brand, performance, and business awareness that now informs how I think about products and users.',
         journeyStage2Label: 'Transition',
         journeyStage2Title: 'Hands-on digital execution',
-        journeyStage2Text: 'Moved from strategy into making, shipping and refining digital experiences directly through code and product work.',
+        journeyStage2Text: 'Moved from strategy into making, shipping, and refining digital experiences directly through code and product work.',
         journeyStage3Label: 'Expansion',
         journeyStage3Title: 'Full-stack and AI capability',
-        journeyStage3Text: 'Built technical range across interfaces, AI-enhanced experiences and developer workflows with a portfolio-driven mindset.',
+        journeyStage3Text: 'Built technical range across interfaces, AI-enhanced experiences, and developer workflows with a portfolio-driven mindset.',
         journeyStage4Label: 'Now',
         journeyStage4Title: 'Developer positioning',
         journeyStage4Text: 'Focused on growing as a developer first, while keeping the strategic edge that makes my work more intentional and differentiated.',
         contactLabel: 'Contact',
         contactTitle: 'Let’s build something strong',
-        contactText: 'I am especially interested in opportunities where product, engineering and thoughtful user experience come together.',
+        contactText: 'I am especially interested in opportunities where product, engineering, and thoughtful user experience come together.',
         contactLeftTitle: 'Find me online',
-        contactLeftText: 'Use these links for your applications, networking messages and recruiter conversations.',
-        contactEmailPlaceholder: 'replace with your email ↗',
-        ctaTitle: 'How to make this portfolio even stronger',
-        ctaText: 'Add 3 to 5 polished developer projects with live demos, stronger README files, screenshots, clean repository descriptions and a focused GitHub profile pinned to your best work.',
+        contactLeftText: 'Use these links for applications, networking, and recruiter conversations.',
+        contactEmailPlaceholder: 'wendybezerra.dev@gmail.com ↗',
+        ctaTitle: 'Open to thoughtful product and engineering work',
+        ctaText: 'I’m focused on building stronger developer projects, refined user experiences, and modern full-stack work that feels both polished and useful.',
         ctaButton: 'Open GitHub profile',
         footerText: 'Designed to present Wendy Bezerra as a modern Full-Stack & AI Developer with strong product and execution instincts.',
         loadingRepos: 'Loading repositories…',
@@ -1306,10 +1280,10 @@
         navProjects: 'Projetos',
         navContact: 'Contato',
         eyebrow: 'Aberta a construir produtos modernos com IA, engenharia full-stack e visão de produto',
-        heroLine1: 'Eu construo',
-        heroLine2: 'produtos digitais sofisticados',
-        heroLine3: 'com código, IA e estratégia.',
-        heroDescription: 'Desenvolvedora Full-Stack & IA com background em marketing e finanças, focada em criar interfaces limpas, produtos úteis e experiências escaláveis. Gosto de sistemas bem pensados, execução forte e trabalho que pareça elegante e eficiente.',
+        heroLine1: 'Construindo',
+        heroLine2: 'produtos pensados com cuidado, onde',
+        heroLine3: 'tecnologia, IA e experiência humana se encontram.',
+        heroDescription: 'Sou uma Desenvolvedora Full-Stack & IA com background em marketing e finanças. Gosto de construir produtos digitais com intenção — combinando interfaces limpas, sistemas escaláveis e soluções com IA. Me importo com como os produtos funcionam, como eles são sentidos pelos usuários e como a tecnologia pode gerar valor real quando engenharia, design e estratégia trabalham juntos.',
         heroPrimary: 'Explorar projetos',
         heroSecondary: 'Ver GitHub',
         metricRepos: 'repositórios públicos exibidos via API do GitHub',
@@ -1328,15 +1302,15 @@
         aboutRightTitle: 'O que quero construir cada vez mais',
         aboutRightText: 'Projetos em desenvolvimento full-stack, interfaces com IA, sistemas de front-end bem pensados, experiências interativas de produto e builds end-to-end que mostrem alcance técnico e qualidade de execução.',
         stackLabel: 'Capacidades',
-        stackTitle: 'Stack técnica e forças complementares',
-        stackText: 'Esta seção ajuda recrutadores e hiring managers a entenderem sua faixa técnica rapidamente, sem perder a visão estratégica que diferencia seu perfil.',
+        stackTitle: 'Tecnologias centrais e forças complementares',
+        stackText: 'Uma visão objetiva das tecnologias com que trabalho e das forças que moldam a forma como construo produtos.',
         stackFrontend: 'Front-end',
         stackFullstack: 'Full-stack',
         stackAi: 'IA & produto',
         stackBusiness: 'Contexto de negócio',
         featuredLabel: 'Destaques',
-        featuredTitle: 'Projetos que quero que recrutadores vejam primeiro',
-        featuredText: 'Mantenha esta área curada. Estes cards devem ser suas peças mais fortes, com links para demos, estudos de caso ou repositórios específicos.',
+        featuredTitle: 'Projetos',
+        featuredText: 'Uma seleção curada de trabalhos que refletem minha combinação mais forte de visão full-stack, design de interface e execução de produto.',
         featuredVisual1: 'Experiência de produto para saúde e hábitos com IA centrada em personalização e UX cuidadosa.',
         featuredVisual2: 'Um portfólio de experiências web em que desenvolvimento, conversão e refinamento visual trabalham juntos.',
         featuredVisual3: 'Pensamento técnico e analítico aplicado a sistemas mais inteligentes de decisão e oportunidades de produto.',
@@ -1345,30 +1319,19 @@
         featuredDesc2: 'Interfaces responsivas e builds digitais desenhadas com foco em experiência do usuário e objetivos de negócio. Útil para mostrar qualidade de execução e bom gosto em front-end.',
         featuredDesc3: 'Um conceito focado em transformar dados de performance em decisões estratégicas mais claras. Forte para mostrar resolução de problemas entre IA, produto e análise.',
         projectGithub: 'GitHub ↗',
-        statsLabel: 'GitHub em tempo real',
-        statsTitle: 'Estatísticas vivas do GitHub na página',
-        statsText: 'Esses cards atualizam automaticamente a partir do seu perfil público do GitHub. É uma das formas mais fáceis de mostrar atividade como desenvolvedora sem editar o site toda vez.',
-        statReposLabel: 'Repositórios',
-        statReposText: 'repositórios públicos disponíveis no seu perfil do GitHub',
-        statStarsLabel: 'Stars',
-        statStarsText: 'total de stars nos repositórios públicos selecionados',
-        statUpdatedLabel: 'Última atualização',
-        statUpdatedText: 'atividade mais recente mostrada a partir do GitHub',
-        statLanguagesLabel: 'Stack principal',
-        statLanguagesText: 'linguagem principal mais comum entre os repositórios exibidos',
         projectsLabel: 'Feed automático de projetos',
-        projectsTitle: 'Projetos do GitHub carregados automaticamente',
-        projectsText: 'Esta seção busca repositórios diretamente do GitHub com JavaScript, então seu portfólio pode se manter atualizado conforme você adiciona mais trabalhos de desenvolvimento. Ela prioriza projetos técnicos e mantém a página viva.',
+        projectsTitle: 'Projetos do GitHub',
+        projectsText: 'Um feed ao vivo de repositórios públicos puxados diretamente do GitHub para manter este portfólio atualizado conforme meu trabalho evolui.',
         projectsHint1: 'Ao vivo da API do GitHub',
         projectsHint2: 'Atualização automática',
         projectsHint3: 'Showcase developer-first',
         seeAllRepos: 'Ver todos os repositórios ↗',
         journeyLabel: 'Trajetória',
         journeyTitle: 'Como meu perfil está evoluindo',
-        journeyText: 'Esta parte ajuda a contar sua história para recrutadores: não como uma mistura aleatória de interesses, mas como uma evolução clara rumo à construção de produtos e desenvolvimento moderno.',
+        journeyText: 'Uma forma mais clara de mostrar como meu background evoluiu para um caminho mais técnico e focado em produto dentro do desenvolvimento de software.',
         journeyStage1Label: 'Base',
         journeyStage1Title: 'Marketing e visão de negócio',
-        journeyStage1Text: 'Construí comunicação forte, visão de marca, performance e contexto de negócio que hoje informam como penso em produtos e usuários.',
+        journeyStage1Text: 'Construí comunicação forte, visão de marca, performance e contexto de negócio que hoje influenciam como penso em produtos e usuários.',
         journeyStage2Label: 'Transição',
         journeyStage2Title: 'Execução digital hands-on',
         journeyStage2Text: 'Saí da estratégia para fazer, lançar e refinar experiências digitais diretamente com código e trabalho de produto.',
@@ -1383,9 +1346,9 @@
         contactText: 'Tenho interesse especial em oportunidades onde produto, engenharia e experiência do usuário se encontram.',
         contactLeftTitle: 'Me encontre online',
         contactLeftText: 'Use esses links em candidaturas, networking e conversas com recrutadores.',
-        contactEmailPlaceholder: 'substitua pelo seu email ↗',
-        ctaTitle: 'Como deixar este portfólio ainda mais forte',
-        ctaText: 'Adicione de 3 a 5 projetos de desenvolvimento bem polidos com demos, READMEs melhores, screenshots, descrições limpas dos repositórios e um perfil do GitHub focado nos seus melhores trabalhos.',
+        contactEmailPlaceholder: 'wendybezerra.dev@gmail.com ↗',
+        ctaTitle: 'Aberta a trabalhos com produto e engenharia bem pensados',
+        ctaText: 'Estou focada em construir projetos de desenvolvimento mais fortes, experiências de usuário mais refinadas e trabalhos full-stack modernos que pareçam polidos e úteis ao mesmo tempo.',
         ctaButton: 'Abrir perfil no GitHub',
         footerText: 'Desenhado para apresentar Wendy Bezerra como uma Desenvolvedora Full-Stack & IA moderna, com forte visão de produto e execução.',
         loadingRepos: 'Carregando repositórios…',
@@ -1406,11 +1369,6 @@
         month: 'short',
         day: 'numeric'
       }).format(date);
-    }
-
-    function relativeDate(dateString, language = currentLanguage) {
-      const date = new Date(dateString);
-      return formatDate(date, language);
     }
 
     function updateText(language) {
@@ -1446,9 +1404,11 @@
       if (repo.homepage && repo.homepage.trim()) {
         return repo.homepage;
       }
+
       if (repo.name.toLowerCase().includes('portfolio')) {
         return `https://${githubUsername}.github.io/${repo.name}`;
       }
+
       return '';
     }
 
@@ -1485,35 +1445,40 @@
 
     function updateStats(repositories) {
       const repoCount = repositories.length;
-      const totalStars = repositories.reduce((total, repo) => total + repo.stargazers_count, 0);
-      const latestRepo = repositories.slice().sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))[0];
-      const languageMap = {};
 
-      repositories.forEach((repo) => {
-        if (!repo.language) return;
-        languageMap[repo.language] = (languageMap[repo.language] || 0) + 1;
-      });
-
-      const topLanguage = Object.entries(languageMap).sort((a, b) => b[1] - a[1])[0]?.[0] || '--';
-
-      repoCountElement.textContent = repoCount;
-      heroRepoCountElement.textContent = repoCount;
-      starCountElement.textContent = totalStars;
-      latestUpdateElement.textContent = latestRepo ? formatDate(latestRepo.updated_at) : '--';
-      topLanguageElement.textContent = topLanguage;
+      if (heroRepoCountElement) {
+        heroRepoCountElement.textContent = repoCount;
+      }
     }
 
     function rankRepositories(repositories) {
-      const technicalKeywords = ['ai', 'app', 'web', 'api', 'full', 'stack', 'dev', 'code', 'project', 'routine', 'analytics', 'landing'];
+      const technicalKeywords = [
+        'ai',
+        'app',
+        'web',
+        'api',
+        'full',
+        'stack',
+        'dev',
+        'code',
+        'project',
+        'routine',
+        'analytics',
+        'landing'
+      ];
 
       return repositories
         .filter((repo) => !repo.fork && !repo.archived && !repo.private)
         .map((repo) => {
           const text = `${repo.name} ${repo.description || ''}`.toLowerCase();
-          const keywordScore = technicalKeywords.reduce((score, keyword) => score + (text.includes(keyword) ? 2 : 0), 0);
+          const keywordScore = technicalKeywords.reduce(
+            (score, keyword) => score + (text.includes(keyword) ? 2 : 0),
+            0
+          );
           const starScore = repo.stargazers_count * 3;
           const homepageScore = repo.homepage ? 2 : 0;
           const recentScore = new Date(repo.updated_at).getTime() / 1000000000000;
+
           return {
             ...repo,
             weight: keywordScore + starScore + homepageScore + recentScore
@@ -1562,8 +1527,12 @@
         (entries) => {
           entries.forEach((entry) => {
             if (!entry.isIntersecting) return;
+
             navAnchors.forEach((anchor) => {
-              anchor.classList.toggle('active', anchor.getAttribute('href') === `#${entry.target.id}`);
+              anchor.classList.toggle(
+                'active',
+                anchor.getAttribute('href') === `#${entry.target.id}`
+              );
             });
           });
         },
@@ -1590,6 +1559,8 @@
     }
 
     function setupCursorGlow() {
+      if (!cursorGlow) return;
+
       window.addEventListener('mousemove', (event) => {
         cursorGlow.style.left = `${event.clientX}px`;
         cursorGlow.style.top = `${event.clientY}px`;
