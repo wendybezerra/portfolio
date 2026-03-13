@@ -21,18 +21,13 @@
       --bg: #120f0e;
       --bg-soft: #191413;
       --panel: rgba(255, 255, 255, 0.05);
-      --panel-strong: rgba(255, 255, 255, 0.08);
       --border: rgba(255, 255, 255, 0.1);
       --text: #f7f3f1;
       --muted: #b9ada7;
       --accent: #ff7a59;
       --accent-2: #ffc29b;
-      --accent-3: #ff9f7f;
       --success: #8df0c7;
       --shadow: 0 20px 80px rgba(0, 0, 0, 0.35);
-      --radius-lg: 28px;
-      --radius-md: 20px;
-      --radius-sm: 14px;
       --max-width: 1180px;
       --nav-height: 76px;
     }
@@ -608,6 +603,14 @@
       opacity: 1;
     }
 
+    .auto-projects-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
     .repo-grid {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
@@ -858,9 +861,9 @@
 
           <h1>
             <span data-i18n="heroLine1">Where</span>
-            <span class="gradient" data-i18n="heroLine2">Technology and AI meets</span>
-            <span data-i18n="heroLine3">Human Experience.</span>
-          </h1>  
+            <span class="gradient" data-i18n="heroLine2">technology and AI meet</span>
+            <span data-i18n="heroLine3">human experience.</span>
+          </h1>
 
           <p data-i18n="heroDescription">
             I’m a Full-Stack & AI Developer with a background in marketing and finance. I enjoy building thoughtful digital products, combining clean interfaces, scalable systems, and AI-powered solutions. I care about how products work, how they feel for users, and how technology can create real value when engineering, design, and strategy come together.
@@ -904,7 +907,6 @@
             <span class="section-label" data-i18n="aboutLabel">Positioning</span>
             <h2 data-i18n="aboutTitle">Tech first. Product driven. Design aware.</h2>
           </div>
-         
         </div>
 
         <div class="grid about-grid">
@@ -933,7 +935,6 @@
             <span class="section-label" data-i18n="stackLabel">Capabilities</span>
             <h2 data-i18n="stackTitle">Core technologies and complementary strengths</h2>
           </div>
-       
         </div>
 
         <div class="grid stack-grid">
@@ -989,7 +990,6 @@
             <span class="section-label" data-i18n="featuredLabel">Featured work</span>
             <h2 data-i18n="featuredTitle">Projects</h2>
           </div>
-          
         </div>
 
         <div class="grid featured-grid">
@@ -1049,7 +1049,6 @@
             <span class="section-label" data-i18n="projectsLabel">Automatic project feed</span>
             <h2 data-i18n="projectsTitle">GitHub Projects</h2>
           </div>
-       
         </div>
 
         <div class="auto-projects-header reveal">
@@ -1078,7 +1077,6 @@
             <span class="section-label" data-i18n="journeyLabel">Trajectory</span>
             <h2 data-i18n="journeyTitle">How my profile is evolving</h2>
           </div>
-        
         </div>
 
         <div class="grid timeline-grid">
@@ -1114,8 +1112,6 @@
             <span class="section-label" data-i18n="contactLabel">Contact</span>
             <h2 data-i18n="contactTitle">Let’s build something strong</h2>
           </div>
-        
-          
         </div>
 
         <div class="grid contact-grid">
@@ -1183,17 +1179,17 @@
         navProjects: 'Projects',
         navContact: 'Contact',
         eyebrow: 'Open to building modern products with AI, full-stack engineering and product thinking',
-        heroLine1: ' Where'  
-        heroLine2: 'Technology and AI meets',
-        heroLine3: 'Human Experience.',
-        heroDescription: 'I’m a Full-Stack & AI Developer with a background in marketing and finance. I enjoy building thoughtful digital products — combining clean interfaces, scalable systems, and AI-powered solutions. I care about how products work, how they feel for users, and how technology can create real value when engineering, design, and strategy come together.',
+        heroLine1: 'Where',
+        heroLine2: 'technology and AI meet',
+        heroLine3: 'human experience.',
+        heroDescription: 'I’m a Full-Stack & AI Developer with a background in marketing and finance. I enjoy building thoughtful digital products, combining clean interfaces, scalable systems, and AI-powered solutions. I care about how products work, how they feel for users, and how technology can create real value when engineering, design, and strategy come together.',
         heroPrimary: 'Explore projects',
         heroSecondary: 'View GitHub',
         metricRepos: 'public repositories showcased through GitHub API',
         metricFullstack: 'front-end polish with product-minded development',
         metricAi: 'focused on useful experiences, not just experiments',
         heroCardLabel: 'Current focus',
-        heroCardText: 'Building modern web experiences, AI-powered tools, and developer-ready interfaces with a strong product and brand perspective.',
+        heroCardText: 'Building modern web experiences, AI-powered tools and developer-ready interfaces with a strong product and brand perspective.',
         aboutLabel: 'Positioning',
         aboutTitle: 'Tech first. Product driven. Design aware.',
         aboutLeftTitle: 'What I bring to development teams',
@@ -1202,7 +1198,7 @@
         aboutLeft3: 'Cross-functional communication shaped by marketing, strategy and business awareness',
         aboutLeft4: 'A polished portfolio mindset: build it well, present it well, ship with intention',
         aboutRightTitle: 'What I am building more of',
-        aboutRightText: 'Projects in full-stack development, AI-enhanced interfaces, thoughtful front-end systems, interactive product experiences, and end-to-end digital builds that show both technical range and execution quality.',
+        aboutRightText: 'Projects in full-stack development, AI-enhanced interfaces, thoughtful front-end systems, interactive product experiences and end-to-end digital builds that show both technical range and execution quality.',
         stackLabel: 'Capabilities',
         stackTitle: 'Core technologies and complementary strengths',
         stackFrontend: 'Front-end',
@@ -1263,10 +1259,10 @@
         navProjects: 'Projetos',
         navContact: 'Contato',
         eyebrow: 'Aberta a construir produtos modernos com IA, engenharia full-stack e visão de produto',
-        heroLine1: 'Construindo',
-        heroLine2: 'produtos pensados com cuidado, onde',
-        heroLine3: 'tecnologia, IA e experiência humana se encontram.',
-        heroDescription: 'Sou uma Desenvolvedora Full-Stack & IA com background em marketing e finanças. Gosto de construir produtos digitais com intenção — combinando interfaces limpas, sistemas escaláveis e soluções com IA. Me importo com como os produtos funcionam, como eles são sentidos pelos usuários e como a tecnologia pode gerar valor real quando engenharia, design e estratégia trabalham juntos.',
+        heroLine1: 'Onde',
+        heroLine2: 'tecnologia e IA encontram',
+        heroLine3: 'a experiência humana.',
+        heroDescription: 'Sou uma Desenvolvedora Full-Stack & IA com background em marketing e finanças. Gosto de construir produtos digitais com intenção, combinando interfaces limpas, sistemas escaláveis e soluções com IA. Me importo com como os produtos funcionam, como são percebidos pelos usuários e como a tecnologia pode gerar valor real quando engenharia, design e estratégia trabalham juntos.',
         heroPrimary: 'Explorar projetos',
         heroSecondary: 'Ver GitHub',
         metricRepos: 'repositórios públicos exibidos via API do GitHub',
@@ -1276,7 +1272,6 @@
         heroCardText: 'Construindo experiências web modernas, ferramentas com IA e interfaces prontas para produto com forte visão de produto e marca.',
         aboutLabel: 'Posicionamento',
         aboutTitle: 'Tech first. Orientada a produto. Sensível a design.',
-        aboutText: 'Meu foco principal é desenvolvimento de software. Construo soluções full-stack e com IA, desenho interfaces centradas no usuário e penso com cuidado em como um produto deve funcionar, parecer e escalar. Meu background em marketing e finanças me ajuda a conectar decisões de engenharia com contexto de negócio e valor para o usuário.',
         aboutLeftTitle: 'O que levo para times de desenvolvimento',
         aboutLeft1: 'Execução full-stack com olhar forte para front-end e estrutura limpa e sustentável',
         aboutLeft2: 'Visão de produto com IA focada em fluxos reais, usabilidade e valor',
@@ -1286,14 +1281,12 @@
         aboutRightText: 'Projetos em desenvolvimento full-stack, interfaces com IA, sistemas de front-end bem pensados, experiências interativas de produto e builds end-to-end que mostrem alcance técnico e qualidade de execução.',
         stackLabel: 'Capacidades',
         stackTitle: 'Tecnologias centrais e forças complementares',
-        stackText: 'Uma visão objetiva das tecnologias com que trabalho e das forças que moldam a forma como construo produtos.',
         stackFrontend: 'Front-end',
         stackFullstack: 'Full-stack',
         stackAi: 'IA & produto',
         stackBusiness: 'Contexto de negócio',
         featuredLabel: 'Destaques',
         featuredTitle: 'Projetos',
-        featuredText: 'Uma seleção curada de trabalhos que refletem minha combinação mais forte de visão full-stack, design de interface e execução de produto.',
         featuredVisual1: 'Experiência de produto para saúde e hábitos com IA centrada em personalização e UX cuidadosa.',
         featuredVisual2: 'Um portfólio de experiências web em que desenvolvimento, conversão e refinamento visual trabalham juntos.',
         featuredVisual3: 'Pensamento técnico e analítico aplicado a sistemas mais inteligentes de decisão e oportunidades de produto.',
@@ -1304,14 +1297,12 @@
         projectGithub: 'GitHub ↗',
         projectsLabel: 'Feed automático de projetos',
         projectsTitle: 'Projetos do GitHub',
-        projectsText: 'Um feed ao vivo de repositórios públicos puxados diretamente do GitHub para manter este portfólio atualizado conforme meu trabalho evolui.',
         projectsHint1: 'Ao vivo da API do GitHub',
         projectsHint2: 'Atualização automática',
         projectsHint3: 'Showcase developer-first',
         seeAllRepos: 'Ver todos os repositórios ↗',
         journeyLabel: 'Trajetória',
         journeyTitle: 'Como meu perfil está evoluindo',
-        journeyText: 'Uma forma mais clara de mostrar como meu background evoluiu para um caminho mais técnico e focado em produto dentro do desenvolvimento de software.',
         journeyStage1Label: 'Base',
         journeyStage1Title: 'Marketing e visão de negócio',
         journeyStage1Text: 'Construí comunicação forte, visão de marca, performance e contexto de negócio que hoje influenciam como penso em produtos e usuários.',
@@ -1326,7 +1317,6 @@
         journeyStage4Text: 'Focada em crescer primeiro como desenvolvedora, mantendo a vantagem estratégica que torna meu trabalho mais intencional e diferenciado.',
         contactLabel: 'Contato',
         contactTitle: 'Vamos construir algo forte',
-        contactText: 'Tenho interesse especial em oportunidades onde produto, engenharia e experiência do usuário se encontram.',
         contactLeftTitle: 'Me encontre online',
         contactLeftText: 'Use esses links em candidaturas, networking e conversas com recrutadores.',
         contactEmailPlaceholder: 'wendybezerra.dev@gmail.com ↗',
